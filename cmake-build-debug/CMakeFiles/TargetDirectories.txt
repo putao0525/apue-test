@@ -1,5 +1,0 @@
-/Users/putao/code/test/c/apue-test/cmake-build-debug/CMakeFiles/main02.c.dir
-/Users/putao/code/test/c/apue-test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/putao/code/test/c/apue-test/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/putao/code/test/c/apue-test/cmake-build-debug/CMakeFiles/main.c.dir
-/Users/putao/code/test/c/apue-test/cmake-build-debug/CMakeFiles/ls.c.dir
