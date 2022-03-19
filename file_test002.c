@@ -6,6 +6,7 @@
 // 这是一个 复制文件的场景，一个字符一个字符的复制
 // C语言还是要多写注释，并且要多复习
 //
+
 int main(int argc, char *argv[]) { // 相当于数组的传递
     FILE *fin, *fout;
     int ch;
