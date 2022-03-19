@@ -10,11 +10,11 @@
 int main() {
     FILE *fp = NULL;
     //mode 参数是指一个字符串
-    fp = fopen("main.c", "r"); // 0666 & ~umask  =xxxx
+    fp = fopen("main.c2", "r"); // 0666 & ~umask  =xxxx
     if (fp == NULL) {
 //        fprintf(stderr, "fopen() faild errno=%d\n", errno);//确定就是知道num
 //        perror("fopen()"); //能有自动关联全局的errno
-        fprintf(stderr, "fopen():%s\n", strerror(errno));
+//        fprintf(stderr, "fopen():%s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
     puts("ok"); //相当是往stdout上输出信息
