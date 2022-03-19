@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     }
     char *lineBuf = NULL;
     size_t lineSize = 0;
-    //参数1:二级指针,传递的字符串地址,会将内容放到这个字符串里面
+    //参数1:二级指针,传递的字符串地址,会将内容放到这个字符串里面, 这里涉及内存的泄漏问题
     //参数2:动态的容量大小
     while (true) {
         if (getline(&lineBuf, &lineSize, fin) < 0) {
