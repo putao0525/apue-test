@@ -9,12 +9,18 @@
 // fopen() -->fputc()*10-->fclose()-->fopen()-->fgetc()*10
 
 //
-// fseek 就是解决这样问题的. SEEK_CUR(文件的开始位置） SEEK_SET SEEK_END(文件的结束位置）
-// fopen() -->fputc()-->fseek(fp,-10,SEEK_CUR)-->fgetc()
+// fseek 就是解决这样问题的.
+// fseek 场景之一：可以帮我们完成空洞文件，下载文件的大小2G，一开始就占用2G文件,分片下载
+// fseek(fp,2g,SEEK_SET)
 
+// SEEK_CUR(文件的开始位置） SEEK_SET SEEK_END(文件的结束位置）
+// fopen() -->fputc()-->fseek(fp,-10,SEEK_CUR)-->fgetc()
+//
 //
 // ftell() 获取当前文件的指针
+// rewind() 相当于是fseek(fp,0,SEEK_SET)
 //
+
 
 
 int main(int argc, char *argv[]) {
@@ -30,7 +36,7 @@ int main(int argc, char *argv[]) {
         perror("文件打开失败");
         exit(EXIT_FAILURE);
     }
-    fseek(fin, 0, SEEK_END);//将文件的指针放到文件的最后
+    fseek(fin, 0L, SEEK_END);//将文件的指针放到文件的最后
     printf("文件字符的大小:%ld", ftell(fin)); //返回文件指针的位置
     fclose(fin);
     return 0;
