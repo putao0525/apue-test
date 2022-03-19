@@ -8,6 +8,7 @@
 //
 int main() {
     FILE *fp = NULL;
+    //mode 参数是指一个字符串
     fp = fopen("main.c", "r"); // 0666 & ~umask  =xxxx
     if (fp == NULL) {
 //        fprintf(stderr, "fopen() faild errno=%d\n", errno);//确定就是知道num
