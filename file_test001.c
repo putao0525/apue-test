@@ -6,6 +6,7 @@
 //
 // 打开文件的场景
 //
+
 int main() {
     FILE *fp = NULL;
     //mode 参数是指一个字符串
