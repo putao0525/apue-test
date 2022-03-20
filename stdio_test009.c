@@ -40,6 +40,5 @@ int main(int argc, char *argv[]) {
     fclose(fin);//在关闭被使用方
 
     return 0;
-    return 0;
 }
 
