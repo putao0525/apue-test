@@ -4,6 +4,7 @@
 #include <string.h>
 
 //
+// fopen() fclose()
 // 打开文件的场景
 //
 
