@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
+#include <time.h>
 //
 //
 // fread 用于读取一个整块对象，小于bufferSize 失败

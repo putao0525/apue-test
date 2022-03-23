@@ -41,4 +41,3 @@ int main(int argc, char *argv[]) {
     fclose(fin);
     return 0;
 }
-
